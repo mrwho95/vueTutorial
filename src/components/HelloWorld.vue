@@ -2,7 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <!-- msg come from script props -->
-    <alert></alert>
+    <alert mode="primary">First Alert</alert>
+    <alert mode="danger">Second Alert</alert>
+    <alert mode="success">Third Alert</alert>
   </div>
 </template>
 
