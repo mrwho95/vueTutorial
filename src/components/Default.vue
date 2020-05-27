@@ -2,7 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <!-- msg come from script props -->
-    <alert></alert>
   </div>
 </template>
 
