@@ -17,6 +17,12 @@
     <!-- <button v-on:click="ClickMe">Click Me</button> -->
     <!-- event handling Key Modifier refer to vue event handling documentation -->
     <input type="text" @keyup.enter="doSomething" placeholder="Please write your code" />
+
+    <h3>Using Loop</h3>
+    <ul>
+      <!-- v-for == for loop -->
+      <li v-for="person in students" :key="person">{{person}}</li>
+    </ul>
   </div>
 </template>
 
@@ -28,7 +34,8 @@ export default {
   },
   data() {
     return {
-      lastname: "Ali"
+      lastname: "Ali",
+      students: ["Ali", "Jan", "Dennis", "Henry"]
     };
   },
   methods: {
@@ -53,10 +60,10 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+// li {
+//   display: inline-block;
+//   margin: 0 10px;
+// }
 a {
   color: #42b983;
 }
