@@ -10,6 +10,8 @@
 export default {
   name: "Alert",
   //   props can accept object, array
+  //   communicate between parent to child
+  //   mode value come from hello world vue mode value
   props: ["mode"]
 };
 </script>

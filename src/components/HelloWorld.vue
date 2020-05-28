@@ -5,6 +5,12 @@
     <alert mode="primary">First Alert</alert>
     <alert mode="danger">Second Alert</alert>
     <alert mode="success">Third Alert</alert>
+    <alert mode="danger">Fouth Alert</alert>
+    <div>
+      <input type="text" v-model="lastname" placeholder="Your Name" />
+      <!-- v-model connect data.lastname to the input -->
+      <p>Welcome, {{lastname}}</p>
+    </div>
   </div>
 </template>
 
@@ -13,6 +19,11 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      lastname: "Ali"
+    };
   }
 };
 </script>
