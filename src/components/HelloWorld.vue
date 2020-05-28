@@ -11,6 +11,12 @@
       <!-- v-model connect data.lastname to the input -->
       <p>Welcome, {{lastname}}</p>
     </div>
+
+    <button @click="ClickMe">Click Me</button>
+    <!-- @click same as v-on:click -->
+    <!-- <button v-on:click="ClickMe">Click Me</button> -->
+    <!-- event handling Key Modifier refer to vue event handling documentation -->
+    <input type="text" @keyup.enter="doSomething" placeholder="Please write your code" />
   </div>
 </template>
 
@@ -24,6 +30,16 @@ export default {
     return {
       lastname: "Ali"
     };
+  },
+  methods: {
+    ClickMe: function() {
+      //old way create function
+      console.log("You click on the button");
+    },
+    doSomething() {
+      //new way create function
+      console.log("Coupon Applied");
+    }
   }
 };
 </script>
